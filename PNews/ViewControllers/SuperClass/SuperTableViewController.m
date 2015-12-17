@@ -62,7 +62,7 @@
     self.requiredLink = (NSMutableString *)[self.requiredLink stringByReplacingOccurrencesOfString:@"\">[link]</a>" withString:@""];
     [self.stories setTitle:item.title];
     [self.stories setLink:self.requiredLink];
-    if([self.feedsArray count]<=100)
+    if([self.feedsArray count]<100)
     {
         [self.feedsArray addObject:self.stories];
     }
